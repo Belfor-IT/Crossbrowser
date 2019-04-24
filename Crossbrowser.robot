@@ -11,12 +11,12 @@ ${Browser}     gc
 ${EmailAdres}  test@robot.nl 
 ${Pwd}         welkom
 ${LoginMessage}  Welkom op uw account. Hier kunt u al uw persoonlijke gegevens en bestellingen beheren.
-${RemoteUrl}	 remote_url=http://localhost:4444/wd/hub  
+${RemoteUrl}	 http://localhost:4444/wd/hub  
 
 
 *** Test Cases ***
 Login in als een gebruiker
-    Open Browser  				${Homepage}    ${Browser}	${RemoteUrl}
+    Open Browser  				${Homepage}    ${Browser}	remote_url=${RemoteUrl}
     Maximize Browser Window
     Wait Until Page Contains Element    id=homepage-slider
     Click Element    link=Inloggen
