@@ -11,7 +11,7 @@ ${Browser}     gc
 ${EmailAdres}  test@robot.nl 
 ${Pwd}         welkom
 ${LoginMessage}  Welkom op uw account. Hier kunt u al uw persoonlijke gegevens en bestellingen beheren.
-${RemoteUrl}	${EMPTY}   
+${RemoteUrl}	 remote_url=http://localhost:4444/wd/hub  
 
 
 *** Test Cases ***
